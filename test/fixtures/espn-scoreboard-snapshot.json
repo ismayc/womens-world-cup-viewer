@@ -1,0 +1,2692 @@
+{
+ "events": [
+  {
+   "id": "622584",
+   "date": "2023-07-20T07:00Z",
+   "name": "Norway at New Zealand",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group A",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "New Zealand"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Norway"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622585",
+   "date": "2023-07-20T10:00Z",
+   "name": "Republic of Ireland at Australia",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group B",
+     "venue": {
+      "fullName": "Accor Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Australia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Republic of Ireland"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622582",
+   "date": "2023-07-21T02:30Z",
+   "name": "Canada at Nigeria",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group B",
+     "venue": {
+      "fullName": "AAMI Park",
+      "address": {
+       "city": "Melbourne"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Nigeria"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Canada"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622581",
+   "date": "2023-07-21T05:00Z",
+   "name": "Switzerland at Philippines",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group A",
+     "venue": {
+      "fullName": "Forsyth Barr Stadium",
+      "address": {
+       "city": "Dunedin"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Philippines"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Switzerland"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622583",
+   "date": "2023-07-21T07:30Z",
+   "name": "Costa Rica at Spain",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group C",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Spain"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Costa Rica"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622580",
+   "date": "2023-07-22T01:00Z",
+   "name": "Vietnam at United States",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group E",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "United States"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Vietnam"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622577",
+   "date": "2023-07-22T07:00Z",
+   "name": "Japan at Zambia",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group C",
+     "venue": {
+      "fullName": "FMG Stadium Waikato",
+      "address": {
+       "city": "Hamilton"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Zambia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "5",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Japan"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622578",
+   "date": "2023-07-22T09:30Z",
+   "name": "Haiti at England",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group D",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "England"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Haiti"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622579",
+   "date": "2023-07-22T12:00Z",
+   "name": "China at Denmark",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group D",
+     "venue": {
+      "fullName": "HBF Park",
+      "address": {
+       "city": "Perth"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Denmark"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "China"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622576",
+   "date": "2023-07-23T05:00Z",
+   "name": "South Africa at Sweden",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group G",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Sweden"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "South Africa"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622574",
+   "date": "2023-07-23T07:30Z",
+   "name": "Portugal at Netherlands",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group E",
+     "venue": {
+      "fullName": "Forsyth Barr Stadium",
+      "address": {
+       "city": "Dunedin"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Netherlands"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Portugal"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622575",
+   "date": "2023-07-23T10:00Z",
+   "name": "Jamaica at France",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group F",
+     "venue": {
+      "fullName": "Allianz Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "France"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Jamaica"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622572",
+   "date": "2023-07-24T06:00Z",
+   "name": "Argentina at Italy",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group G",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Italy"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Argentina"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622573",
+   "date": "2023-07-24T08:30Z",
+   "name": "Morocco at Germany",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group H",
+     "venue": {
+      "fullName": "AAMI Park",
+      "address": {
+       "city": "Melbourne"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "6",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Germany"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Morocco"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622571",
+   "date": "2023-07-24T11:00Z",
+   "name": "Panama at Brazil",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group F",
+     "venue": {
+      "fullName": "Coopers Stadium",
+      "address": {
+       "city": "Adelaide"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "4",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Brazil"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Panama"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622570",
+   "date": "2023-07-25T02:00Z",
+   "name": "South Korea at Colombia",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group H",
+     "venue": {
+      "fullName": "Allianz Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Colombia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "South Korea"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622569",
+   "date": "2023-07-25T05:30Z",
+   "name": "Philippines at New Zealand",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group A",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "New Zealand"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Philippines"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622568",
+   "date": "2023-07-25T08:00Z",
+   "name": "Norway at Switzerland",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group A",
+     "venue": {
+      "fullName": "FMG Stadium Waikato",
+      "address": {
+       "city": "Hamilton"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Switzerland"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Norway"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622566",
+   "date": "2023-07-26T05:00Z",
+   "name": "Costa Rica at Japan",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group C",
+     "venue": {
+      "fullName": "Forsyth Barr Stadium",
+      "address": {
+       "city": "Dunedin"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Japan"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Costa Rica"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622567",
+   "date": "2023-07-26T07:30Z",
+   "name": "Zambia at Spain",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group C",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "5",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Spain"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Zambia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622565",
+   "date": "2023-07-26T12:00Z",
+   "name": "Republic of Ireland at Canada",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group B",
+     "venue": {
+      "fullName": "HBF Park",
+      "address": {
+       "city": "Perth"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Canada"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Republic of Ireland"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622564",
+   "date": "2023-07-27T01:00Z",
+   "name": "Netherlands at United States",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group E",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "United States"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Netherlands"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622563",
+   "date": "2023-07-27T07:30Z",
+   "name": "Vietnam at Portugal",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group E",
+     "venue": {
+      "fullName": "FMG Stadium Waikato",
+      "address": {
+       "city": "Hamilton"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Portugal"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Vietnam"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622562",
+   "date": "2023-07-27T10:00Z",
+   "name": "Nigeria at Australia",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group B",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Australia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Nigeria"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622561",
+   "date": "2023-07-28T00:00Z",
+   "name": "South Africa at Argentina",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group G",
+     "venue": {
+      "fullName": "Forsyth Barr Stadium",
+      "address": {
+       "city": "Dunedin"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Argentina"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "South Africa"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622560",
+   "date": "2023-07-28T08:30Z",
+   "name": "Denmark at England",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group D",
+     "venue": {
+      "fullName": "Allianz Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "England"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Denmark"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622559",
+   "date": "2023-07-28T11:00Z",
+   "name": "Haiti at China",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group D",
+     "venue": {
+      "fullName": "Coopers Stadium",
+      "address": {
+       "city": "Adelaide"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "China"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Haiti"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622558",
+   "date": "2023-07-29T07:30Z",
+   "name": "Italy at Sweden",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group G",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "5",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Sweden"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Italy"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622557",
+   "date": "2023-07-29T10:00Z",
+   "name": "Brazil at France",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group F",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "France"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Brazil"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622556",
+   "date": "2023-07-29T12:30Z",
+   "name": "Jamaica at Panama",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group F",
+     "venue": {
+      "fullName": "HBF Park",
+      "address": {
+       "city": "Perth"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Panama"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Jamaica"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622553",
+   "date": "2023-07-30T04:30Z",
+   "name": "Morocco at South Korea",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group H",
+     "venue": {
+      "fullName": "Coopers Stadium",
+      "address": {
+       "city": "Adelaide"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "South Korea"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Morocco"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622552",
+   "date": "2023-07-30T07:00Z",
+   "name": "Philippines at Norway",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group A",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "6",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Norway"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Philippines"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622555",
+   "date": "2023-07-30T07:00Z",
+   "name": "New Zealand at Switzerland",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group A",
+     "venue": {
+      "fullName": "Forsyth Barr Stadium",
+      "address": {
+       "city": "Dunedin"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Switzerland"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "New Zealand"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622554",
+   "date": "2023-07-30T09:30Z",
+   "name": "Colombia at Germany",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group H",
+     "venue": {
+      "fullName": "Allianz Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Germany"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Colombia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622551",
+   "date": "2023-07-31T07:00Z",
+   "name": "Zambia at Costa Rica",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group C",
+     "venue": {
+      "fullName": "FMG Stadium Waikato",
+      "address": {
+       "city": "Hamilton"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Costa Rica"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Zambia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622550",
+   "date": "2023-07-31T07:00Z",
+   "name": "Spain at Japan",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group C",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "4",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Japan"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Spain"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622548",
+   "date": "2023-07-31T10:00Z",
+   "name": "Australia at Canada",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group B",
+     "venue": {
+      "fullName": "AAMI Park",
+      "address": {
+       "city": "Melbourne"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Canada"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "4",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Australia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622549",
+   "date": "2023-07-31T10:00Z",
+   "name": "Nigeria at Republic of Ireland",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group B",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Republic of Ireland"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Nigeria"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622546",
+   "date": "2023-08-01T07:00Z",
+   "name": "United States at Portugal",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group E",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Portugal"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "United States"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622547",
+   "date": "2023-08-01T07:00Z",
+   "name": "Netherlands at Vietnam",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group E",
+     "venue": {
+      "fullName": "Forsyth Barr Stadium",
+      "address": {
+       "city": "Dunedin"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Vietnam"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "7",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Netherlands"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622544",
+   "date": "2023-08-01T11:00Z",
+   "name": "England at China",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group D",
+     "venue": {
+      "fullName": "Coopers Stadium",
+      "address": {
+       "city": "Adelaide"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "China"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "England"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622545",
+   "date": "2023-08-01T11:00Z",
+   "name": "Denmark at Haiti",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group D",
+     "venue": {
+      "fullName": "HBF Park",
+      "address": {
+       "city": "Perth"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Haiti"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Denmark"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622542",
+   "date": "2023-08-02T07:00Z",
+   "name": "Sweden at Argentina",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group G",
+     "venue": {
+      "fullName": "FMG Stadium Waikato",
+      "address": {
+       "city": "Hamilton"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Argentina"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Sweden"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622543",
+   "date": "2023-08-02T07:00Z",
+   "name": "Italy at South Africa",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group G",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "South Africa"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Italy"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622541",
+   "date": "2023-08-02T10:00Z",
+   "name": "Brazil at Jamaica",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group F",
+     "venue": {
+      "fullName": "AAMI Park",
+      "address": {
+       "city": "Melbourne"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Jamaica"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Brazil"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622540",
+   "date": "2023-08-02T10:00Z",
+   "name": "France at Panama",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group F",
+     "venue": {
+      "fullName": "Allianz Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Panama"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "6",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "France"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622539",
+   "date": "2023-08-03T10:00Z",
+   "name": "Colombia at Morocco",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group H",
+     "venue": {
+      "fullName": "HBF Park",
+      "address": {
+       "city": "Perth"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Morocco"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Colombia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622538",
+   "date": "2023-08-03T10:00Z",
+   "name": "Germany at South Korea",
+   "season": {
+    "slug": "group-stage"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Group H",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "South Korea"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Germany"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622601",
+   "date": "2023-08-05T05:00Z",
+   "name": "Spain at Switzerland",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Switzerland"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "5",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Spain"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622600",
+   "date": "2023-08-05T08:00Z",
+   "name": "Norway at Japan",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Japan"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Norway"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622599",
+   "date": "2023-08-06T02:00Z",
+   "name": "South Africa at Netherlands",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "Allianz Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Netherlands"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "South Africa"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622598",
+   "date": "2023-08-06T09:00Z",
+   "name": "United States at Sweden",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "AAMI Park",
+      "address": {
+       "city": "Melbourne"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT-Pens"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": 5,
+       "team": {
+        "displayName": "Sweden"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": 4,
+       "team": {
+        "displayName": "United States"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622596",
+   "date": "2023-08-07T07:30Z",
+   "name": "Nigeria at England",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT-Pens"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": 4,
+       "team": {
+        "displayName": "England"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": 2,
+       "team": {
+        "displayName": "Nigeria"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622597",
+   "date": "2023-08-07T10:30Z",
+   "name": "Denmark at Australia",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "Accor Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Australia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Denmark"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622594",
+   "date": "2023-08-08T08:00Z",
+   "name": "Jamaica at Colombia",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "AAMI Park",
+      "address": {
+       "city": "Melbourne"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Colombia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Jamaica"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622595",
+   "date": "2023-08-08T11:00Z",
+   "name": "Morocco at France",
+   "season": {
+    "slug": "round-of-16"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Round of 16",
+     "venue": {
+      "fullName": "Coopers Stadium",
+      "address": {
+       "city": "Adelaide"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "4",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "France"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Morocco"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622592",
+   "date": "2023-08-11T01:00Z",
+   "name": "Netherlands at Spain",
+   "season": {
+    "slug": "quarterfinals"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Quarterfinals",
+     "venue": {
+      "fullName": "Sky Stadium",
+      "address": {
+       "city": "Wellington"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "AET"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Spain"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Netherlands"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622593",
+   "date": "2023-08-11T07:30Z",
+   "name": "Sweden at Japan",
+   "season": {
+    "slug": "quarterfinals"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Quarterfinals",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Japan"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Sweden"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622590",
+   "date": "2023-08-12T07:00Z",
+   "name": "France at Australia",
+   "season": {
+    "slug": "quarterfinals"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Quarterfinals",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT-Pens"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "0",
+       "shootoutScore": 7,
+       "team": {
+        "displayName": "Australia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": 6,
+       "team": {
+        "displayName": "France"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622591",
+   "date": "2023-08-12T10:30Z",
+   "name": "Colombia at England",
+   "season": {
+    "slug": "quarterfinals"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Quarterfinals",
+     "venue": {
+      "fullName": "Accor Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "England"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Colombia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622589",
+   "date": "2023-08-15T08:00Z",
+   "name": "Sweden at Spain",
+   "season": {
+    "slug": "semifinals"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Semifinals",
+     "venue": {
+      "fullName": "Eden Park",
+      "address": {
+       "city": "Auckland"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Spain"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Sweden"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622588",
+   "date": "2023-08-16T10:00Z",
+   "name": "England at Australia",
+   "season": {
+    "slug": "semifinals"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Semifinals",
+     "venue": {
+      "fullName": "Accor Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Australia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "3",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "England"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622587",
+   "date": "2023-08-19T08:00Z",
+   "name": "Australia at Sweden",
+   "season": {
+    "slug": "3rd-place"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, 3rd-Place",
+     "venue": {
+      "fullName": "Suncorp Stadium",
+      "address": {
+       "city": "Brisbane"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "2",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Sweden"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Australia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "622586",
+   "date": "2023-08-20T10:00Z",
+   "name": "England at Spain",
+   "season": {
+    "slug": "final"
+   },
+   "competitions": [
+    {
+     "altGameNote": "FIFA Women's World Cup, Final",
+     "venue": {
+      "fullName": "Accor Stadium",
+      "address": {
+       "city": "Sydney"
+      }
+     },
+     "status": {
+      "type": {
+       "detail": "FT"
+      }
+     },
+     "competitors": [
+      {
+       "homeAway": "home",
+       "score": "1",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "Spain"
+       }
+      },
+      {
+       "homeAway": "away",
+       "score": "0",
+       "shootoutScore": null,
+       "team": {
+        "displayName": "England"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="bg" cx="80%" cy="-10%" r="100%">
+      <stop offset="0%" stop-color="#1f2f66"/>
+      <stop offset="55%" stop-color="#0a1430"/>
+      <stop offset="100%" stop-color="#070d1f"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="12" fill="#4f8cff"/>
+
+  <!-- The Southern Cross (Crux), the same mark as icon.svg and favicon.svg so the
+       card, the tab and the installed app share one identity. Four stars are the
+       intersection of the two co-hosts' flags. See public/icon.svg for the note. -->
+  <path fill="#ffffff" d="M169.6 164.2 L175.8 183.6 L196.2 183.6 L179.7 195.5 L186.0 214.9 L169.6 202.9 L153.1 214.9 L159.4 195.5 L142.9 183.6 L163.3 183.6 Z"/>  <!-- gamma Crucis -->
+  <path fill="#ffffff" d="M74.4 282.4 L80.7 301.8 L101.0 301.8 L84.5 313.8 L90.8 333.1 L74.4 321.1 L57.9 333.1 L64.2 313.8 L47.7 301.8 L68.1 301.8 Z"/>  <!-- beta Crucis -->
+  <path fill="#ffffff" d="M261.6 239.7 L267.9 259.0 L288.3 259.0 L271.8 271.0 L278.1 290.3 L261.6 278.4 L245.2 290.3 L251.5 271.0 L235.0 259.0 L255.3 259.0 Z"/>  <!-- delta Crucis -->
+  <path fill="#ffffff" d="M195.8 439.8 L202.1 459.1 L222.4 459.1 L206.0 471.1 L212.3 490.4 L195.8 478.5 L179.3 490.4 L185.6 471.1 L169.2 459.1 L189.5 459.1 Z"/>  <!-- alpha Crucis -->
+
+  <!-- text -->
+  <text x="330" y="262" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" fill="#ffffff">Women&#8217;s World Cup 2023</text>
+  <text x="332" y="334" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#4f8cff">Schedule Viewer</text>
+  <text x="332" y="408" font-family="Arial, Helvetica, sans-serif" font-size="31" fill="#aab4c5">All 64 matches in your timezone &#183; standings &#183; bracket</text>
+  <text x="332" y="460" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#7f8aa0">Australia &#38; New Zealand &#183; 20 July &#8211; 20 August 2023</text>
+</svg>

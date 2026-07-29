@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Southern Cross">
+  <rect width="512" height="512" fill="#0a1430"/>
+  <!-- The Southern Cross (Crux). The one device carried on BOTH co-hosts' flags:
+       New Zealand bears these four stars, Australia the same four plus Epsilon
+       Crucis, so four is exactly the intersection and favours neither host.
+       A device rather than a badge, and its own device: the bare soccer ball
+       belongs to world-cup-viewer, the ball on a saltire to
+       football-euros-viewer, the Sol de Mayo to copa-america-viewer.
+       Star centres are the real right ascension and declination of Crux on a
+       local tangent projection, so the shape is the sky's, not a sketch.
+       Filled polygons only, never strokes: ImageMagick drops stroke colour.
+       Furthest point is 201px from centre, inside the 205px maskable safe
+       radius, so Android's circle crop never clips a star. -->
+  <path fill="#ffffff" d="M257.9 58.3 L265.3 81.1 L289.2 81.1 L269.8 95.2 L277.3 118.0 L257.9 103.9 L238.5 118.0 L245.9 95.2 L226.5 81.1 L250.4 81.1 Z"/>  <!-- gamma Crucis -->
+  <path fill="#ffffff" d="M144.0 199.6 L151.5 222.4 L175.4 222.4 L156.0 236.5 L163.4 259.3 L144.0 245.2 L124.7 259.3 L132.1 236.5 L112.7 222.4 L136.6 222.4 Z"/>  <!-- beta Crucis -->
+  <path fill="#ffffff" d="M368.0 148.5 L375.4 171.3 L399.3 171.3 L379.9 185.4 L387.3 208.2 L368.0 194.1 L348.6 208.2 L356.0 185.4 L336.6 171.3 L360.5 171.3 Z"/>  <!-- delta Crucis -->
+  <path fill="#ffffff" d="M289.2 387.7 L296.7 410.5 L320.6 410.5 L301.2 424.6 L308.6 447.4 L289.2 433.3 L269.9 447.4 L277.3 424.6 L257.9 410.5 L281.8 410.5 Z"/>  <!-- alpha Crucis -->
+</svg>
