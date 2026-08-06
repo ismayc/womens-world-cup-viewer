@@ -252,3 +252,21 @@ describe('groupComplete', () => {
     expect(groupComplete('A', aMatches.map((m) => ({ ...m, score: [1, 0] })))).toBe(true)
   })
 })
+
+describe('a group result naming a team the committed table does not list', () => {
+  it('is skipped rather than ranked into the group', () => {
+    // Upstream re-spells a team mid-tournament ("Korea Republic" → "South
+    // Korea") and the refreshed board arrives carrying the new name. It belongs
+    // to no row here, so the result is left out of the table entirely rather
+    // than crashing the ranker or inventing a fifth team in the group.
+    const stranger = [
+      { num: 900, stage: 'Group', group: 'A', t1: 'Nowhere United', t2: 'Norway', score: [4, 0] },
+    ]
+    const rows = rankGroup('A', stranger)
+    expect(rows.map((r) => r.name)).not.toContain('Nowhere United')
+    expect(rows).toHaveLength(4)
+    // Norway's row is untouched by the conceded four.
+    const nor = rows.find((r) => r.name === 'Norway')
+    expect([nor.P, nor.GA, nor.Pts]).toEqual([0, 0, 0])
+  })
+})

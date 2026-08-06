@@ -113,3 +113,53 @@ describe('OutlookView (enumeration result rendering)', () => {
     expect(screen.getByText(/Enumeration failed: boom/)).toBeInTheDocument()
   })
 })
+
+describe('OutlookView — the messages and boards the grid also has to survive', () => {
+  it('reads a done message with no survivors list as nobody alive beyond the margins', () => {
+    // An older worker build (or one that bailed before the exact pass) posts a
+    // result with no `survivors` key at all. That is "none", not a crash.
+    render(<OutlookView matches={COMPLETE} />)
+    send({ type: 'done', result: allLocked() })
+    expect(screen.queryByText(/Still mathematically alive/)).toBeNull()
+    expect(screen.getByText(/Every round-of-16 matchup is now mathematically set/)).toBeInTheDocument()
+  })
+
+  it('ignores a message of a kind it does not know', () => {
+    render(<OutlookView matches={COMPLETE} />)
+    send({ type: 'something-else' })
+    // Still enumerating: an unknown message moves nothing.
+    expect(screen.getByText(/Enumerating goal-difference outcomes/)).toBeInTheDocument()
+  })
+
+  it('marks a candidate the flag table has never heard of', () => {
+    render(<OutlookView matches={COMPLETE} />)
+    const perMatch = {}
+    for (const n of NUMS) perMatch[n] = [
+      { locked: 'Switzerland', candidates: [] },
+      { locked: 'Ecuador', candidates: [] },
+    ]
+    perMatch[NUMS[0]] = [
+      { locked: null, candidates: [{ team: 'Nowhere United', pct: 0.5 }] },
+      { locked: null, candidates: [] },
+    ]
+    send({ type: 'done', result: { total: 2, remaining: 1, cap: 6, perMatch }, survivors: [] })
+    expect(document.querySelector('.bo-cand-flag').textContent).toBe('•')
+  })
+
+  it('counts a single remaining group game in the singular', () => {
+    // Every group game final except one: the intro line says "1 group game left",
+    // not "1 group games left".
+    let left = 1
+    const oneOpen = MATCHES.map((m) => {
+      if (m.stage !== 'Group') return m
+      if (left > 0) {
+        left--
+        return m // leave exactly one unplayed
+      }
+      return { ...m, score: [1, 0] }
+    })
+    render(<OutlookView matches={oneOpen} />)
+    expect(screen.getByText(/group game left/)).toBeInTheDocument()
+    expect(screen.queryByText(/group games left/)).toBeNull()
+  })
+})

@@ -447,6 +447,63 @@ describe('App coverage', () => {
     }
   })
 
+  it('stays silent when a goal vanishes from the feed and comes back', async () => {
+    // ESPN drops an event from its list and puts it back a poll later — routine
+    // while a match is being written up. The goal snapshot accumulates every key
+    // it has ever seen precisely so that round trip is silent: one toast, not
+    // two, and no second notification.
+    localStorage.setItem('wwc:goalAlerts', JSON.stringify({ enabled: true, scope: 'all' }))
+    vi.useFakeTimers()
+    vi.setSystemTime(new Date('2023-07-20T07:00:00Z'))
+    try {
+      let goals = []
+      global.fetch = vi.fn(async (url) => {
+        if (typeof url === 'string' && url.startsWith(LIVE_SOURCE.url)) {
+          return {
+            ok: true,
+            json: async () => ({
+              events: [
+                espnEvent({
+                  home: 'New Zealand',
+                  away: 'Norway',
+                  date: '2023-07-20T07:00:00Z',
+                  state: 'in',
+                  hs: String(goals.length),
+                  as: '0',
+                  goals,
+                }),
+              ],
+            }),
+          }
+        }
+        return { ok: true, json: async () => ({ events: [] }) }
+      })
+      render(<App />)
+      await vi.waitFor(() => expect(screen.getByText(/live now/)).toBeInTheDocument())
+      const region = () => screen.getByRole('region', { name: /Goal alerts/ })
+
+      goals = [{ side: 'home', name: 'Solo', minute: 12 }]
+      fireEvent.click(document.querySelector('.results-refresh'))
+      await vi.advanceTimersByTimeAsync(100)
+      await vi.waitFor(() => expect(region().textContent).toMatch(/Solo/))
+      const once = region().textContent
+
+      // The event vanishes from the feed…
+      goals = []
+      fireEvent.click(document.querySelector('.results-refresh'))
+      await vi.advanceTimersByTimeAsync(100)
+      // …and comes back.
+      goals = [{ side: 'home', name: 'Solo', minute: 12 }]
+      fireEvent.click(document.querySelector('.results-refresh'))
+      await vi.advanceTimersByTimeAsync(100)
+
+      expect(region().textContent).toBe(once)
+      expect(region().querySelectorAll('.toast, [role="status"]').length).toBeLessThanOrEqual(1)
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
   it('toggleGoalAlerts: granted -> enables, scope select, toggle scope, disable', async () => {
     class FakeNotification {
       static permission = 'granted'

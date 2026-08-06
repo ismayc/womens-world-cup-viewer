@@ -89,6 +89,14 @@ describe('pathToFinal + knockoutTeams (util)', () => {
     )
     expect(pathToFinal('United States', byNum).exitNum).toBe(52) // lost the shootout
     expect(pathToFinal('Sweden', byNum).exitNum).toBeNull() // advanced
+
+    // …and the other way round, so the shootout is read from the second-named
+    // team's side too rather than always crowning the home column.
+    const flipped = matchesByNum(
+      withPath({ 52: { t1: 'Sweden', t2: 'United States', score: [0, 0], aet: true, pens: [4, 5] } }),
+    )
+    expect(pathToFinal('Sweden', flipped).exitNum).toBe(52)
+    expect(pathToFinal('United States', flipped).exitNum).toBeNull()
   })
 
   it('keeps the team alive through a win and follows it into the next round', () => {
@@ -165,6 +173,32 @@ describe('PathPicker', () => {
     // Clearing removes the status.
     fireEvent.click(screen.getByRole('button', { name: /Clear/ }))
     expect(screen.queryByText(/Up next/)).not.toBeInTheDocument()
+  })
+
+  it('clears the path by picking the empty option back out of the dropdown', () => {
+    // The "Pick a team…" entry carries an empty value; choosing it has to clear
+    // the highlight rather than trace a team with no name.
+    renderWith(<PathPicker byNum={matchesByNum(withPath(R16_TEAMS))} />)
+    const select = screen.getByLabelText(/Path to the Final/)
+    fireEvent.change(select, { target: { value: 'Spain' } })
+    expect(screen.getByText(/Up next/)).toBeInTheDocument()
+    fireEvent.change(select, { target: { value: '' } })
+    expect(screen.queryByText(/Up next/)).not.toBeInTheDocument()
+    expect(select.value).toBe('')
+  })
+
+  it('summarizes a team that has reached the Final but not yet played it', () => {
+    // Everything up to the Final is decided and Spain are in it — one step short
+    // of the champions line, which only lands once the Final is final.
+    const inTheFinal = {
+      49: { t1: 'Switzerland', t2: 'Spain', score: [1, 5] },
+      57: { t1: 'Spain', score: [2, 1] },
+      61: { t1: 'Spain', score: [2, 1] },
+      64: { t1: 'Spain', t2: 'England' },
+    }
+    renderWith(<PathPicker byNum={matchesByNum(withPath(inTheFinal))} />, { pathTeam: 'Spain' })
+    expect(screen.getByText(/In the Final/)).toBeInTheDocument()
+    expect(screen.queryByText(/Champions/)).toBeNull()
   })
 
   it('summarizes "through to the next round" after winning its deepest match', () => {
