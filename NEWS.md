@@ -18,6 +18,15 @@ data/source updates, deployment). Newest day on top.
   locked 1–4 order. Ported from the World Cup sibling; mirrors the Finish
   column the WNBA/NBA/NFL viewers carry.
 
+## 2026-08-09
+
+- **Card/sub backfill finds every match now.** `historyDates` filed each
+  kickoff under its UTC day, but ESPN buckets `dates=` queries by the
+  US-Eastern day. Seven Oceania lunchtime kickoffs land just past midnight
+  UTC; the QF (Spain–Netherlands) sat alone on its Eastern day, so its cards
+  and substitutions were never backfilled. Days are now computed in
+  America/New_York, with a regression test on that QF.
+
 ## 2026-08-08
 
 - **Condensed view strip.** Once the header's view switch scrolls out of view, a

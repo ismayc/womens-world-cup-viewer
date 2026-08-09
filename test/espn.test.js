@@ -23,11 +23,19 @@ describe('scoreboardDates', () => {
 })
 
 describe('historyDates', () => {
-  it('lists distinct UTC dates of already-finished matches, excluding the live window', () => {
+  it('lists distinct ESPN (US-Eastern) days of finished matches, excluding the live window', () => {
     // Base: 25 July noon UTC. Live window (scoreboardDates) = Jul 24/25/26, so
     // those are excluded; earlier match days (Jul 20–23) are the backfill set.
     const dates = historyDates(MATCHES, new Date('2023-07-25T12:00:00Z'))
     expect(dates).toEqual(['20230720', '20230721', '20230722', '20230723'])
+  })
+
+  it('files a just-past-midnight-UTC kickoff under the previous (US-Eastern) day', () => {
+    // QF Spain–Netherlands: 13:00 NZST Aug 11 = 01:00Z — ESPN files it under
+    // Aug 10 Eastern, a day with no other match. The old UTC-day conversion
+    // asked for the 11th, so this match's cards/subs were never backfilled.
+    const dates = historyDates(MATCHES, new Date('2023-09-01T00:00:00Z'))
+    expect(dates).toContain('20230810')
   })
 
   it('skips a fixture that has no kickoff instant yet', () => {
