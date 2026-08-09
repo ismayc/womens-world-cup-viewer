@@ -4,6 +4,20 @@ A dated changelog for the Women's World Cup 2023 Schedule Viewer. Each heading i
 a calendar day; bullet points capture every change made that day (features, fixes,
 data/source updates, deployment). Newest day on top.
 
+## 2026-08-09
+
+- **Finish column in the group tables.** Each standings row now ends with a
+  "Fin" column showing the final group positions still arithmetically possible
+  (e.g. `1–3`), collapsing to a single gold number once the finish is locked.
+  The bounds come from the clinch engine's own enumeration — exact (goal
+  difference and head-to-head included, per the 2023 tie-break order of points →
+  goal difference → goals scored → head-to-head → fair play) whenever the
+  group's remaining scorelines are enumerable, sound points-only bounds
+  otherwise — via a new `groupPositionBounds` export, so the column can never
+  contradict the badges. With the edition finished, all eight groups show their
+  locked 1–4 order. Ported from the World Cup sibling; mirrors the Finish
+  column the WNBA/NBA/NFL viewers carry.
+
 ## 2026-08-08
 
 - **Condensed view strip.** Once the header's view switch scrolls out of view, a

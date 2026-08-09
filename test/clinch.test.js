@@ -15,6 +15,7 @@ import {
   newlyClinched,
   clinchHeadline,
   clinchBadge,
+  groupPositionBounds,
 } from '../src/utils/clinch.js'
 
 const GROUPS = Object.keys(TEAMS)
@@ -329,6 +330,43 @@ describe('resolveClinchedSlots — leaves runner-up slots alone', () => {
     // Runner-up placeholders are untouched. A pairs with C in this bracket.
     expect(find(49).t2).toBe('Runner-up Group C')
     expect(find(50).t2).toBe('Runner-up Group A')
+  })
+})
+
+describe('groupPositionBounds', () => {
+  it('reads 1–4 for every team while nothing has been played (points fallback)', () => {
+    // Six remaining games per group is far over the scoreline budget, so every
+    // bound comes from the sound points-only pass — and with no results at all,
+    // every position is genuinely open.
+    const bounds = groupPositionBounds(MATCHES)
+    for (const g of GROUPS) {
+      for (const t of TEAMS[g]) expect(bounds[t.name]).toEqual({ best: 1, worst: 4 })
+    }
+  })
+
+  it('is exact (goal difference and head-to-head included) when the group is enumerable', () => {
+    // Group A with two games left (81² scorelines — enumerable): Norway played
+    // all three (1 point — lost to New Zealand and Switzerland, drew with the
+    // Philippines), New Zealand beat the Philippines; M3 (PHI v SUI) and
+    // M33 (SUI v NZL) remain.
+    const bounds = groupPositionBounds(
+      withScores({ 1: [2, 0], 34: [1, 1], 18: [1, 0], 17: [1, 0] }),
+    )
+    expect(bounds['New Zealand']).toEqual({ best: 1, worst: 2 })
+    expect(bounds['Switzerland']).toEqual({ best: 1, worst: 3 })
+    expect(bounds['Philippines']).toEqual({ best: 2, worst: 4 })
+    expect(bounds['Norway']).toEqual({ best: 3, worst: 4 })
+  })
+
+  it('locks every position once a group is complete — the real 2023 Group A order', () => {
+    // The committed schedule carries the finished edition, so every group is
+    // final: Switzerland won Group A on 7 points, Norway edged New Zealand for
+    // 2nd on goal difference (both 4 points), the Philippines finished 4th.
+    const bounds = groupPositionBounds(PLAYED)
+    expect(bounds['Switzerland']).toEqual({ best: 1, worst: 1 })
+    expect(bounds['Norway']).toEqual({ best: 2, worst: 2 })
+    expect(bounds['New Zealand']).toEqual({ best: 3, worst: 3 })
+    expect(bounds['Philippines']).toEqual({ best: 4, worst: 4 })
   })
 })
 
