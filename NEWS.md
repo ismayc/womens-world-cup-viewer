@@ -6,6 +6,21 @@ data/source updates, deployment). Newest day on top.
 
 ## 2026-08-29
 
+- **Fixed: the header said "All 32 matches · USA".** This edition is 64 matches,
+  co-hosted by Australia and New Zealand. Both halves were the Copa América
+  subtitle, left over from scaffolding, and they were on screen in every view on
+  every load. The Calendar modal's "All 32 matches" row and the link-preview
+  descriptions said 32 too; the page's own `<meta name="description">` had said 64
+  all along, so the file disagreed with itself.
+- **Fixed: downloaded calendar events were titled "EURO:".** `utils/ics.js` prefixed
+  every event with the Euros' name, so adding a match to your calendar produced
+  "EURO: Spain vs England". Everything else in that file was already correct, and
+  the subscribe feed emits "Women's World Cup 2023:", so the download and the
+  subscription disagreed. Both now say Women's World Cup.
+- **Fixed: live scores could not load at all.** The browser code called
+  `site.api.espn.com`, which now 403s any request with a browser User-Agent and
+  returns no CORS headers with it. Moved to `site.web.api`, which serves the
+  identical routes.
 - Rewrote the repo's `verify` skill. It was a near-verbatim copy of the World Cup
   viewer's and described that app: it told you to doctor an OpenFootball feed,
   which this viewer does not use at all (ESPN is its only source), to click a

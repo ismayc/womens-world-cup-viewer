@@ -22,7 +22,7 @@ import { normalizeTeam, isRealTeam, pairKey } from './teamNames.js'
 
 export const LIVE_SOURCE = {
   name: 'ESPN',
-  url: 'https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/scoreboard',
+  url: 'https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/scoreboard',
   homepage: 'https://www.espn.com/soccer/',
 }
 

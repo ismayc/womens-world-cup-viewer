@@ -21,7 +21,7 @@ import { nameKey } from '../utils/tournamentStats.js'
 // tournament's data. Guarded by test/stats-endpoints.test.js.
 export const SUMMARY_SOURCE = {
   name: 'ESPN',
-  url: 'https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/summary',
+  url: 'https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/summary',
 }
 
 const CACHE_PREFIX = 'wwc:matchLines:'

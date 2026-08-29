@@ -447,7 +447,7 @@ export default function App() {
             <span className="trophy">🏆</span> Women&rsquo;s World Cup 2023
           </h1>
           <p className="subtitle">
-            All 32 matches · USA · shown in{' '}
+            All 64 matches · Australia &amp; New Zealand · shown in{' '}
             <strong>{tz.replace(/_/g, ' ')}</strong>
           </p>
         </div>
