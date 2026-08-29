@@ -4,6 +4,15 @@ A dated changelog for the Women's World Cup 2023 Schedule Viewer. Each heading i
 a calendar day; bullet points capture every change made that day (features, fixes,
 data/source updates, deployment). Newest day on top.
 
+## 2026-08-29
+
+- Rewrote the repo's `verify` skill. It was a near-verbatim copy of the World Cup
+  viewer's and described that app: it told you to doctor an OpenFootball feed,
+  which this viewer does not use at all (ESPN is its only source), to click a
+  Radial tab this app does not have, and to find "Match 101" in a 64-match
+  tournament. Its one edited line even named the Copa América repo. Every selector
+  in the new file was probed against this app.
+
 ## 2026-08-16
 
 - **The data scripts now fetch from `site.web.api.espn.com`.** ESPN's edge started
