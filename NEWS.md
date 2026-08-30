@@ -42,6 +42,24 @@ data/source updates, deployment). Newest day on top.
   time, and the failure mode is an empty calendar rather than an error. It now uses
   `site.web.api`, the same host every other viewer and every build script uses. The
   guards test only covers `scripts/` and `src/`, which is why nothing caught this.
+- **Test files run one at a time now (`fileParallelism: false`).** Vitest's v8 provider
+  merges each worker's coverage after the run, and with files in parallel that merge
+  races. It has surfaced in this family three separate ways, all the same fault: a crash
+  reading a departed worker's temp file, an unstable percentage between identical runs,
+  and a function reported uncovered while its own test demonstrably exercises it. Three
+  repos already had this fix; all twelve do now, and the family audit asserts it so the
+  claim cannot quietly stop being true. The cost is real on a many-core laptop (35s
+  against 132s on the largest suite) and close to nothing on a 2-core CI runner, where
+  the parallel run was already CPU-bound. CI is where the flake actually bit.
+- **Serialising immediately exposed a vacuous test here.** With the files run in order,
+  coverage fell to 99.96%: the `events.length > 5` goal-flood suppression guard in
+  `App.jsx` was never executing. The test clicked refresh, advanced a flat 100ms and then
+  asserted that nothing had changed, which passes trivially when the refresh has not
+  landed yet. It now settles on the refreshed live score rendering, which proves the
+  batch was fetched, merged and run through the goal-detect effect before anything is
+  asserted. The identical fault was fixed in the euros and copa siblings on 2026-08-09;
+  this repo was missed then, and the parallel merge had been crediting the line ever
+  since.
 
 ## 2026-08-29
 

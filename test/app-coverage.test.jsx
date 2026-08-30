@@ -439,7 +439,15 @@ describe('App coverage', () => {
       const before = region().textContent
       goals = [...goals, ...Array.from({ length: 6 }, (_, i) => ({ side: 'home', name: `Flood${i}`, minute: 30 + i }))]
       fireEvent.click(document.querySelector('.results-refresh'))
-      await vi.advanceTimersByTimeAsync(100)
+      // Deterministic settle point: the refreshed live score (8–0) rendering
+      // proves the flood batch has been fetched, merged AND run through the
+      // goal-detect effect. A bare timer advance can leave that effect still
+      // queued, so the assertions below run against the pre-flood board and pass
+      // without the suppression guard ever executing. This test was vacuous in
+      // exactly that way until 2026-08-30, when serialising the suite changed the
+      // timing enough to expose App.jsx's `events.length > 5` line as uncovered.
+      // The same fault was fixed in the euros and copa siblings on 2026-08-09.
+      await vi.waitFor(() => expect(document.body.textContent).toMatch(/8\s*–\s*0/))
       expect(region().textContent).toBe(before)
       expect(region().textContent).not.toMatch(/Flood/)
     } finally {
