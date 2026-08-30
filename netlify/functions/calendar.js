@@ -19,8 +19,15 @@
 // can't import from the Vite app's source tree, so the small amount of shape
 // knowledge below is a deliberate restatement of services/espn.js.
 
+// site.WEB.api, not site.api: the two serve identical routes, but ESPN's edge
+// returns 403 to datacenter IPs, which is exactly what a Netlify function runs
+// on. This endpoint was on site.api and happened to keep working, which is the
+// worst kind of correct: the block is applied at the edge and can reach these
+// IPs at any time, and the failure would be a silently empty calendar rather
+// than an error. The guards test only covers scripts/ and src/, so nothing
+// caught this; sports-viewer-meta/scripts/audit-family.mjs does now.
 const FEED =
-  'https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/scoreboard' +
+  'https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/scoreboard' +
   '?dates=20230720-20230820&limit=100'
 const MATCH_MS = 135 * 60 * 1000
 

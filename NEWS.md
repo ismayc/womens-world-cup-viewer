@@ -27,6 +27,21 @@ data/source updates, deployment). Newest day on top.
   hand-edited or unexpected upstream payload reaches. A serverless endpoint has no
   supervisor: an odd record must cost one skipped game, never a 500 that leaves every
   subscriber without a calendar.
+- **The calendar function is inside the coverage gate now.** `coverage.include` was
+  `src/**`, so the `webcal://` subscription endpoint, real shipped code that a
+  subscriber's calendar hits directly, was measured by nothing while the badge read
+  100%. Its handler had no tests at all; it now has them, and the file is gated at 100%
+  like everything else. The new tests cover the parts that decide whether a subscriber
+  gets a usable calendar: that an offset-less kickoff is read in the right zone, that
+  knockout slot codes become readable names, and that an upstream outage produces an
+  error rather than a silently empty calendar.
+- **Fixed: the calendar feed called the ESPN host that blocks datacenters.** The
+  function ran against `site.api.espn.com`, which returns 403 to datacenter IPs, which
+  is exactly what a Netlify function is. It happened to keep working, which is the worst
+  kind of correct: the block is applied at ESPN's edge and can reach these IPs at any
+  time, and the failure mode is an empty calendar rather than an error. It now uses
+  `site.web.api`, the same host every other viewer and every build script uses. The
+  guards test only covers `scripts/` and `src/`, which is why nothing caught this.
 
 ## 2026-08-29
 
