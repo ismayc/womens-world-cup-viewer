@@ -266,3 +266,31 @@ describe('handler — the .ics the feed serves', () => {
     expect(res.body).toMatch(/offline/)
   })
 })
+
+// The defensive arms, uncovered until netlify/functions joined the coverage gate.
+// A serverless endpoint has no supervisor: an odd payload must cost one skipped
+// game, never a 500 that leaves every subscriber without a calendar.
+describe('malformed upstream payloads', () => {
+  const event = (competitions) => ({ events: [{ id: 'x', date: '2023-07-20T12:00Z', competitions }] })
+
+  it('skips a competition that lists no competitors', () => {
+    expect(parseScoreboard(event([{ status: { type: {} }, venue: {} }]))).toEqual([])
+  })
+
+  it('treats a competitor with no team as unnamed rather than crashing', () => {
+    const out = parseScoreboard(
+      event([
+        {
+          status: { type: {} },
+          venue: { fullName: 'Eden Park', address: { city: 'Auckland' } },
+          competitors: [
+            { homeAway: 'home', score: '1', team: undefined },
+            { homeAway: 'away', score: '0', team: { displayName: 'Norway' } },
+          ],
+        },
+      ]),
+    )
+    expect(out).toHaveLength(1)
+    expect(out[0].home).toBe('')
+  })
+})
