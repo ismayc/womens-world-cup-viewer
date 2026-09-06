@@ -4,6 +4,19 @@ A dated changelog for the Women's World Cup 2023 Schedule Viewer. Each heading i
 a calendar day; bullet points capture every change made that day (features, fixes,
 data/source updates, deployment). Newest day on top.
 
+## 2026-09-06
+
+- **Groups G and H had no color on the calendar.** `groupColors.js` listed six fixed
+  letters and was byte-identical in three viewers with four, six and eight groups. This
+  tournament has eight, so the last two got `undefined`. The map is now derived from the
+  tournament's own groups, with an eight-color palette, and a new test compares it to
+  `TEAMS` rather than to a written-out list.
+- **Searching `stage: r16` matched nothing.** `STAGE_ORDER` carries `R16` but the synonym
+  table had no entry for it, and the fallback substring test against "Round of 16" cannot
+  match "r16". Added, along with a test that walks `STAGE_ORDER` and asserts every stage
+  is findable by its own code and by its label. That test now runs in all five tournament
+  viewers.
+
 ## 2026-09-05 (later)
 
 - **The visual identity is now the family's results-board system.** The old look was a set

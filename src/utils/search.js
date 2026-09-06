@@ -18,7 +18,7 @@ const FIELD_ALIASES = {
 // Stage synonyms -> our stage codes.
 const STAGE_SYN = {
   group: 'Group', groups: 'Group', gs: 'Group',
-
+  r16: 'R16', ro16: 'R16', 'round of 16': 'R16', roundof16: 'R16',
   qf: 'QF', quarter: 'QF', quarterfinal: 'QF', quarterfinals: 'QF', 'quarter-final': 'QF',
   sf: 'SF', semi: 'SF', semifinal: 'SF', semifinals: 'SF', 'semi-final': 'SF',
   '3rd': '3rd', third: '3rd', 'third place': '3rd', 'third-place': '3rd',
