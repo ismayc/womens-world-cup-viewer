@@ -19,10 +19,11 @@
 // getter at all.
 
 import { normalizeTeam, isRealTeam, pairKey } from './teamNames.js'
+import { LEAGUE } from '../config/league.js'
 
 export const LIVE_SOURCE = {
   name: 'ESPN',
-  url: 'https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/scoreboard',
+  url: `https://site.web.api.espn.com/apis/site/v2/sports/${LEAGUE.espnPath}/scoreboard`,
   homepage: 'https://www.espn.com/soccer/',
 }
 

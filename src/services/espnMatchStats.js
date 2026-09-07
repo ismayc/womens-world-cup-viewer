@@ -12,6 +12,7 @@
 // localStorage keyed by event id; live matches are always fetched fresh.
 
 import { nameKey } from '../utils/tournamentStats.js'
+import { LEAGUE } from '../config/league.js'
 
 // This endpoint resolves by `event` id and, as of checking, returns the same
 // payload whatever league slug is in the path — so the scaffold's leftover
@@ -21,10 +22,10 @@ import { nameKey } from '../utils/tournamentStats.js'
 // tournament's data. Guarded by test/stats-endpoints.test.js.
 export const SUMMARY_SOURCE = {
   name: 'ESPN',
-  url: 'https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.wwc/summary',
+  url: `https://site.web.api.espn.com/apis/site/v2/sports/${LEAGUE.espnPath}/summary`,
 }
 
-const CACHE_PREFIX = 'wwc:matchLines:'
+const CACHE_PREFIX = `${LEAGUE.storageKey}:matchLines:`
 
 async function getJson(url, signal) {
   const res = await fetch(url, { signal })

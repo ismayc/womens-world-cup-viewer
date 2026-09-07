@@ -14,6 +14,7 @@
 
 import { fetchMatchLines } from './espnMatchStats.js'
 import { nameKey } from '../utils/tournamentStats.js'
+import { LEAGUE } from '../config/league.js'
 
 // League slug + season, NOT the sibling's. This URL is season-scoped and carries
 // no event id, so a wrong slug does not fail — it silently returns ANOTHER
@@ -21,14 +22,14 @@ import { nameKey } from '../utils/tournamentStats.js'
 // with the men's Copa América 2024 board (Lautaro Martínez on 5) and those
 // assists/minutes were then name-joined against Women's World Cup scorers, where
 // essentially nothing matches. Guarded by test/stats-endpoints.test.js.
-const CORE = 'https://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.wwc/seasons/2023'
+const CORE = `https://sports.core.api.espn.com/v2/sports/${LEAGUE.coreSeasonPath}`
 export const LEADERS_SOURCE = {
   name: 'ESPN',
   url: `${CORE}/types/1/leaders?lang=en&region=us`,
 }
 
-const CACHE_KEY = 'wwc:bootExtras'
-const NAMES_KEY = 'wwc:athleteNames'
+const CACHE_KEY = `${LEAGUE.storageKey}:bootExtras`
+const NAMES_KEY = `${LEAGUE.storageKey}:athleteNames`
 export const CACHE_TTL_MS = 15 * 60 * 1000
 
 // $ref links in the feed are http:// — rewrite to https:// or the browser
@@ -154,7 +155,7 @@ export async function fetchBootExtras(signal, { force = false } = {}) {
 // cold load too, where a session high-water mark can't help.
 
 const EVENT_ID = /\/events\/(\d+)/
-const MATCH_STAT_PREFIX = 'wwc:matchStat:' // `${eventId}:${athleteId}` → {a, m} (final games only)
+const MATCH_STAT_PREFIX = `${LEAGUE.storageKey}:matchStat:` // `${eventId}:${athleteId}` → {a, m} (final games only)
 
 function readMatchStat(key) {
   try {

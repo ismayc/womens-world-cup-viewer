@@ -3,6 +3,7 @@
 // rendered into whatever timezone the viewer selects.
 
 import { TEAM_TIMEZONES } from '../data/teamTimezones.js'
+import { LEAGUE } from '../config/league.js'
 
 // The viewer's own IANA timezone, e.g. "America/Chicago" or "Europe/London".
 export function detectTimezone() {
@@ -149,9 +150,8 @@ export function teamKickoffTooltip(iso, teamName) {
   return [head, ...lines].join('\n')
 }
 
-// Match status relative to "now". Group/knockout games run ~2 hours; we treat
-// a match as live for 2h15m after kickoff to cover stoppage and halftime.
-const MATCH_MINUTES = 135
+// Match status relative to "now", using the one match-length window from the config.
+const MATCH_MINUTES = LEAGUE.matchLengthMinutes
 export function matchStatus(iso, now = Date.now()) {
   const start = new Date(iso).getTime()
   const end = start + MATCH_MINUTES * 60 * 1000
