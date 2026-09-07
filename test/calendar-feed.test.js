@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { parseScoreboard, handler } from '../netlify/functions/calendar.js'
 import { MATCHES } from '../src/data/matches.js'
 import { VENUES } from '../src/data/venues.js'
+import { buildICS } from '../src/utils/ics.js'
 
 // A committed snapshot of ESPN's real scoreboard response, so the parser is
 // exercised against the actual feed rather than a hand-made imitation of it.
@@ -264,6 +265,66 @@ describe('handler — the .ics the feed serves', () => {
     const res = await handler({ queryStringParameters: null })
     expect(res.statusCode).toBe(500)
     expect(res.body).toMatch(/offline/)
+  })
+
+  // The feed and the download used to stamp different UID bodies for the same
+  // fixture, so a subscriber who had also downloaded a match saw it twice. A UID
+  // is the only thing a calendar client uses to decide "same event", so the two
+  // sources have to agree on all 64 of them.
+
+  it('gives every match the same UID the download would', async () => {
+    vi.stubGlobal('fetch', fetchSnapshot())
+    const body = (await handler({ queryStringParameters: null })).body
+    const fromFeed = [...body.matchAll(/UID:(\S+)/g)].map((x) => x[1].trim())
+    const fromDownload = MATCHES.map((m) => buildICS(m).match(/UID:(\S+)/)[1].trim())
+
+    expect(fromFeed).toHaveLength(MATCHES.length)
+    expect(new Set(fromFeed).size).toBe(MATCHES.length)
+    expect([...fromFeed].sort()).toEqual([...fromDownload].sort())
+  })
+
+  it('restates the committed fixture list without drifting from it', async () => {
+    // MATCH_NUMS is a copy of src/data/matches.js, so it can go stale. Rebuilding
+    // the pairing here from the app's own data is what catches a regenerated
+    // fixture list: a renumbered or renamed match fails this, not a subscriber's
+    // calendar. Keying on the pair is only sound while no two teams meet twice,
+    // so that is asserted rather than assumed.
+    const pairs = MATCHES.map((m) => [m.t1, m.t2].sort().join('|'))
+    expect(new Set(pairs).size).toBe(MATCHES.length)
+
+    vi.stubGlobal('fetch', fetchSnapshot())
+    const body = (await handler({ queryStringParameters: null })).body
+    expect(body).not.toMatch(/UID:wwc2023-\d{4}-/)
+    expect([...body.matchAll(/UID:wwc2023-match-(\d+)@/g)].map((x) => Number(x[1])).sort((a, b) => a - b))
+      .toEqual(MATCHES.map((m) => m.num).sort((a, b) => a - b))
+  })
+
+  it('falls back to teams and date for a pairing the committed data has never seen', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => ({
+        ok: true,
+        json: async () => ({
+          events: [
+            {
+              date: '2023-07-20T07:00Z',
+              competitions: [
+                {
+                  status: { type: { detail: 'FT' } },
+                  venue: { fullName: 'Eden Park', address: { city: 'Auckland' } },
+                  competitors: [
+                    { homeAway: 'home', score: '2', team: { displayName: 'Narnia' } },
+                    { homeAway: 'away', score: '0', team: { displayName: 'Gondor' } },
+                  ],
+                },
+              ],
+            },
+          ],
+        }),
+      })),
+    )
+    const body = (await handler({ queryStringParameters: null })).body
+    expect(body).toContain('UID:wwc2023-2023-07-20-Narnia-Gondor@womensworldcupviewer')
   })
 })
 
