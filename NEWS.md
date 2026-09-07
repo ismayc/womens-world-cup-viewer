@@ -6,6 +6,23 @@ data/source updates, deployment). Newest day on top.
 
 ## 2026-09-06
 
+- **Every edition fact now lives in one file, `src/config/league.js`.** The two ESPN URL
+  grammars, the nine storage keys spread over six files (theme, followed, goalAlerts,
+  pathTeam, asItStands and the `matchLines:`, `bootExtras`, `athleteNames` and
+  `matchStat:` cache namespaces), the match-length window, the `.ics` identity and the
+  deploy host. 10 files import one module. Behavior is unchanged; every existing test
+  passed untouched.
+- **Structure deliberately stayed out.** `ADVANCING_PER_GROUP`, `ENTRY_ROUND`,
+  `GROUP_MATCH_COUNT`, the slot grammar and the tie-break chain all remain in `utils/`.
+  The three soccer viewers genuinely rank groups by different algorithms, not different
+  constants, and a config field that tried to hold that would be describing behavior.
+- **The `.ics` UID keeps its year.** This edition has finished and its committed schedule
+  will not change, so a subscriber who also holds another edition's feed must not have one
+  overwrite the other.
+- **New `test/chrome-identity.test.js`** holds `index.html`, the manifest and
+  `package.json` to the config. It ported to all three soccer viewers unchanged, which is
+  itself the useful signal: the `.ics` UID domain is the deploy slug with its hyphens
+  removed in every one, so it is asserted as a derivation rather than a second literal.
 - **Groups G and H had no color on the calendar.** `groupColors.js` listed six fixed
   letters and was byte-identical in three viewers with four, six and eight groups. This
   tournament has eight, so the last two got `undefined`. The map is now derived from the
