@@ -251,6 +251,16 @@ describe('groupComplete', () => {
     expect(groupComplete('A', five)).toBe(false)
     expect(groupComplete('A', aMatches.map((m) => ({ ...m, score: [1, 0] })))).toBe(true)
   })
+
+  it('does not count a live or voided sixth match as complete', () => {
+    // A live match has a provisional score; completing the group off it would let the
+    // standings emit a qualification verdict before the result is settled.
+    const aMatches = MATCHES.filter((m) => m.stage === 'Group' && m.group === 'A')
+    const fiveFinal = aMatches.slice(0, 5).map((m) => ({ ...m, score: [1, 0] }))
+    expect(groupComplete('A', [...fiveFinal, { ...aMatches[5], score: [1, 0], live: true }])).toBe(false)
+    expect(groupComplete('A', [...fiveFinal, { ...aMatches[5], score: [1, 0], voided: true }])).toBe(false)
+    expect(groupComplete('A', [...fiveFinal, { ...aMatches[5], score: [1, 0] }])).toBe(true)
+  })
 })
 
 describe('a group result naming a team the committed table does not list', () => {
