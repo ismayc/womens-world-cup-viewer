@@ -69,6 +69,8 @@ export const LEAGUE = {
     filenameBase: 'womens-world-cup-2023',
   },
 
-  // Netlify serves /calendar.ics; GitHub Pages cannot run the function.
-  feedHost: 'https://womens-world-cup-viewer.netlify.app',
+  // The origin the calendar subscription links point at. /calendar.ics is a STATIC
+  // file for this finished edition (scripts/build-calendar.mjs), so unlike the live
+  // siblings it is served by GitHub Pages, the canonical host, and not only Netlify.
+  feedHost: 'https://ismayc.github.io/womens-world-cup-viewer',
 }

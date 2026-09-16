@@ -4,6 +4,16 @@ A dated changelog for the Women's World Cup 2023 Schedule Viewer. Each heading i
 a calendar day; bullet points capture every change made that day (features, fixes,
 data/source updates, deployment). Newest day on top.
 
+## 2026-09-16
+
+- **Calendar subscription feed now works.** The subscribable `/calendar.ics` was a
+  Netlify function that fetched ESPN live, but ESPN dropped date-range scoreboard
+  queries, so the feed's window had begun returning an error rather than the
+  schedule. It is now a static file built from the committed schedule, with every
+  match's kick-off, venue, and final score baked in. Because it is a real file rather
+  than a function, it is served by GitHub Pages, the canonical host, and by Netlify
+  alike.
+
 ## 2026-09-14
 
 - **Group completion now requires every match to be truly final.** The provisional "as it

@@ -1,0 +1,582 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Women's World Cup 2023 Viewer//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Women's World Cup 2023
+BEGIN:VEVENT
+UID:wwc2023-match-1@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230720T070000Z
+DTEND:20230720T091500Z
+SUMMARY:Women's World Cup: New Zealand vs Norway (1–0)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Group A · Match 1\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-2@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230720T100000Z
+DTEND:20230720T121500Z
+SUMMARY:Women's World Cup: Australia vs Republic of Ireland (1–0)
+LOCATION:Stadium Australia\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Group B · Match 2\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-4@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230721T023000Z
+DTEND:20230721T044500Z
+SUMMARY:Women's World Cup: Nigeria vs Canada (0–0)
+LOCATION:Melbourne Rectangular Stadium\, Melbourne / Naarm\, Australia & New Zealand
+DESCRIPTION:Group B · Match 4\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-3@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230721T050000Z
+DTEND:20230721T071500Z
+SUMMARY:Women's World Cup: Philippines vs Switzerland (0–2)
+LOCATION:Dunedin Stadium\, Dunedin / Ōtepoti\, Australia & New Zealand
+DESCRIPTION:Group A · Match 3\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-5@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230721T073000Z
+DTEND:20230721T094500Z
+SUMMARY:Women's World Cup: Spain vs Costa Rica (3–0)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Group C · Match 5\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-9@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230722T010000Z
+DTEND:20230722T031500Z
+SUMMARY:Women's World Cup: United States vs Vietnam (3–0)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Group E · Match 9\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-6@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230722T070000Z
+DTEND:20230722T091500Z
+SUMMARY:Women's World Cup: Zambia vs Japan (0–5)
+LOCATION:Waikato Stadium\, Hamilton / Kirikiriroa\, Australia & New Zealand
+DESCRIPTION:Group C · Match 6\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-7@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230722T093000Z
+DTEND:20230722T114500Z
+SUMMARY:Women's World Cup: England vs Haiti (1–0)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Group D · Match 7\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-8@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230722T120000Z
+DTEND:20230722T141500Z
+SUMMARY:Women's World Cup: Denmark vs China (1–0)
+LOCATION:Perth Rectangular Stadium\, Perth / Boorloo\, Australia & New Zealand
+DESCRIPTION:Group D · Match 8\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-12@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230723T050000Z
+DTEND:20230723T071500Z
+SUMMARY:Women's World Cup: Sweden vs South Africa (2–1)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Group G · Match 12\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-10@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230723T073000Z
+DTEND:20230723T094500Z
+SUMMARY:Women's World Cup: Netherlands vs Portugal (1–0)
+LOCATION:Dunedin Stadium\, Dunedin / Ōtepoti\, Australia & New Zealand
+DESCRIPTION:Group E · Match 10\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-11@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230723T100000Z
+DTEND:20230723T121500Z
+SUMMARY:Women's World Cup: France vs Jamaica (0–0)
+LOCATION:Sydney Football Stadium\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Group F · Match 11\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-14@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230724T060000Z
+DTEND:20230724T081500Z
+SUMMARY:Women's World Cup: Italy vs Argentina (1–0)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Group G · Match 14\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-15@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230724T083000Z
+DTEND:20230724T104500Z
+SUMMARY:Women's World Cup: Germany vs Morocco (6–0)
+LOCATION:Melbourne Rectangular Stadium\, Melbourne / Naarm\, Australia & New Zealand
+DESCRIPTION:Group H · Match 15\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-13@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230724T110000Z
+DTEND:20230724T131500Z
+SUMMARY:Women's World Cup: Brazil vs Panama (4–0)
+LOCATION:Hindmarsh Stadium\, Adelaide / Tarntanya\, Australia & New Zealand
+DESCRIPTION:Group F · Match 13\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-16@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230725T020000Z
+DTEND:20230725T041500Z
+SUMMARY:Women's World Cup: Colombia vs South Korea (2–0)
+LOCATION:Sydney Football Stadium\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Group H · Match 16\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-17@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230725T053000Z
+DTEND:20230725T074500Z
+SUMMARY:Women's World Cup: New Zealand vs Philippines (0–1)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Group A · Match 17\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-18@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230725T080000Z
+DTEND:20230725T101500Z
+SUMMARY:Women's World Cup: Switzerland vs Norway (0–0)
+LOCATION:Waikato Stadium\, Hamilton / Kirikiriroa\, Australia & New Zealand
+DESCRIPTION:Group A · Match 18\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-21@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230726T050000Z
+DTEND:20230726T071500Z
+SUMMARY:Women's World Cup: Japan vs Costa Rica (2–0)
+LOCATION:Dunedin Stadium\, Dunedin / Ōtepoti\, Australia & New Zealand
+DESCRIPTION:Group C · Match 21\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-20@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230726T073000Z
+DTEND:20230726T094500Z
+SUMMARY:Women's World Cup: Spain vs Zambia (5–0)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Group C · Match 20\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-19@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230726T120000Z
+DTEND:20230726T141500Z
+SUMMARY:Women's World Cup: Canada vs Republic of Ireland (2–1)
+LOCATION:Perth Rectangular Stadium\, Perth / Boorloo\, Australia & New Zealand
+DESCRIPTION:Group B · Match 19\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-23@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230727T010000Z
+DTEND:20230727T031500Z
+SUMMARY:Women's World Cup: United States vs Netherlands (1–1)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Group E · Match 23\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-24@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230727T073000Z
+DTEND:20230727T094500Z
+SUMMARY:Women's World Cup: Portugal vs Vietnam (2–0)
+LOCATION:Waikato Stadium\, Hamilton / Kirikiriroa\, Australia & New Zealand
+DESCRIPTION:Group E · Match 24\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-22@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230727T100000Z
+DTEND:20230727T121500Z
+SUMMARY:Women's World Cup: Australia vs Nigeria (2–3)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Group B · Match 22\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-27@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230728T000000Z
+DTEND:20230728T021500Z
+SUMMARY:Women's World Cup: Argentina vs South Africa (2–2)
+LOCATION:Dunedin Stadium\, Dunedin / Ōtepoti\, Australia & New Zealand
+DESCRIPTION:Group G · Match 27\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-25@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230728T083000Z
+DTEND:20230728T104500Z
+SUMMARY:Women's World Cup: England vs Denmark (1–0)
+LOCATION:Sydney Football Stadium\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Group D · Match 25\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-26@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230728T110000Z
+DTEND:20230728T131500Z
+SUMMARY:Women's World Cup: China vs Haiti (1–0)
+LOCATION:Hindmarsh Stadium\, Adelaide / Tarntanya\, Australia & New Zealand
+DESCRIPTION:Group D · Match 26\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-30@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230729T073000Z
+DTEND:20230729T094500Z
+SUMMARY:Women's World Cup: Sweden vs Italy (5–0)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Group G · Match 30\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-28@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230729T100000Z
+DTEND:20230729T121500Z
+SUMMARY:Women's World Cup: France vs Brazil (2–1)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Group F · Match 28\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-29@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230729T123000Z
+DTEND:20230729T144500Z
+SUMMARY:Women's World Cup: Panama vs Jamaica (0–1)
+LOCATION:Perth Rectangular Stadium\, Perth / Boorloo\, Australia & New Zealand
+DESCRIPTION:Group F · Match 29\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-32@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230730T043000Z
+DTEND:20230730T064500Z
+SUMMARY:Women's World Cup: South Korea vs Morocco (0–1)
+LOCATION:Hindmarsh Stadium\, Adelaide / Tarntanya\, Australia & New Zealand
+DESCRIPTION:Group H · Match 32\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-33@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230730T070000Z
+DTEND:20230730T091500Z
+SUMMARY:Women's World Cup: Switzerland vs New Zealand (0–0)
+LOCATION:Dunedin Stadium\, Dunedin / Ōtepoti\, Australia & New Zealand
+DESCRIPTION:Group A · Match 33\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-34@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230730T070000Z
+DTEND:20230730T091500Z
+SUMMARY:Women's World Cup: Norway vs Philippines (6–0)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Group A · Match 34\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-31@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230730T093000Z
+DTEND:20230730T114500Z
+SUMMARY:Women's World Cup: Germany vs Colombia (1–2)
+LOCATION:Sydney Football Stadium\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Group H · Match 31\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-37@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230731T070000Z
+DTEND:20230731T091500Z
+SUMMARY:Women's World Cup: Japan vs Spain (4–0)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Group C · Match 37\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-38@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230731T070000Z
+DTEND:20230731T091500Z
+SUMMARY:Women's World Cup: Costa Rica vs Zambia (1–3)
+LOCATION:Waikato Stadium\, Hamilton / Kirikiriroa\, Australia & New Zealand
+DESCRIPTION:Group C · Match 38\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-35@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230731T100000Z
+DTEND:20230731T121500Z
+SUMMARY:Women's World Cup: Canada vs Australia (0–4)
+LOCATION:Melbourne Rectangular Stadium\, Melbourne / Naarm\, Australia & New Zealand
+DESCRIPTION:Group B · Match 35\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-36@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230731T100000Z
+DTEND:20230731T121500Z
+SUMMARY:Women's World Cup: Republic of Ireland vs Nigeria (0–0)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Group B · Match 36\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-41@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230801T070000Z
+DTEND:20230801T091500Z
+SUMMARY:Women's World Cup: Portugal vs United States (0–0)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Group E · Match 41\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-42@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230801T070000Z
+DTEND:20230801T091500Z
+SUMMARY:Women's World Cup: Vietnam vs Netherlands (0–7)
+LOCATION:Dunedin Stadium\, Dunedin / Ōtepoti\, Australia & New Zealand
+DESCRIPTION:Group E · Match 42\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-39@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230801T110000Z
+DTEND:20230801T131500Z
+SUMMARY:Women's World Cup: China vs England (1–6)
+LOCATION:Hindmarsh Stadium\, Adelaide / Tarntanya\, Australia & New Zealand
+DESCRIPTION:Group D · Match 39\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-40@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230801T110000Z
+DTEND:20230801T131500Z
+SUMMARY:Women's World Cup: Haiti vs Denmark (0–2)
+LOCATION:Perth Rectangular Stadium\, Perth / Boorloo\, Australia & New Zealand
+DESCRIPTION:Group D · Match 40\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-45@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230802T070000Z
+DTEND:20230802T091500Z
+SUMMARY:Women's World Cup: Argentina vs Sweden (0–2)
+LOCATION:Waikato Stadium\, Hamilton / Kirikiriroa\, Australia & New Zealand
+DESCRIPTION:Group G · Match 45\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-46@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230802T070000Z
+DTEND:20230802T091500Z
+SUMMARY:Women's World Cup: South Africa vs Italy (3–2)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Group G · Match 46\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-43@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230802T100000Z
+DTEND:20230802T121500Z
+SUMMARY:Women's World Cup: Panama vs France (3–6)
+LOCATION:Sydney Football Stadium\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Group F · Match 43\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-44@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230802T100000Z
+DTEND:20230802T121500Z
+SUMMARY:Women's World Cup: Jamaica vs Brazil (0–0)
+LOCATION:Melbourne Rectangular Stadium\, Melbourne / Naarm\, Australia & New Zealand
+DESCRIPTION:Group F · Match 44\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-47@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230803T100000Z
+DTEND:20230803T121500Z
+SUMMARY:Women's World Cup: South Korea vs Germany (1–1)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Group H · Match 47\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-48@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230803T100000Z
+DTEND:20230803T121500Z
+SUMMARY:Women's World Cup: Morocco vs Colombia (1–0)
+LOCATION:Perth Rectangular Stadium\, Perth / Boorloo\, Australia & New Zealand
+DESCRIPTION:Group H · Match 48\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-49@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230805T050000Z
+DTEND:20230805T071500Z
+SUMMARY:Women's World Cup: Switzerland vs Spain (1–5)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 49\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-50@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230805T080000Z
+DTEND:20230805T101500Z
+SUMMARY:Women's World Cup: Japan vs Norway (3–1)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 50\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-51@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230806T020000Z
+DTEND:20230806T041500Z
+SUMMARY:Women's World Cup: Netherlands vs South Africa (2–0)
+LOCATION:Sydney Football Stadium\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 51\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-52@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230806T090000Z
+DTEND:20230806T111500Z
+SUMMARY:Women's World Cup: Sweden vs United States (0–0)
+LOCATION:Melbourne Rectangular Stadium\, Melbourne / Naarm\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 52\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-54@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230807T073000Z
+DTEND:20230807T094500Z
+SUMMARY:Women's World Cup: England vs Nigeria (0–0)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 54\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-53@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230807T103000Z
+DTEND:20230807T124500Z
+SUMMARY:Women's World Cup: Australia vs Denmark (2–0)
+LOCATION:Stadium Australia\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 53\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-56@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230808T080000Z
+DTEND:20230808T101500Z
+SUMMARY:Women's World Cup: Colombia vs Jamaica (1–0)
+LOCATION:Melbourne Rectangular Stadium\, Melbourne / Naarm\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 56\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-55@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230808T110000Z
+DTEND:20230808T131500Z
+SUMMARY:Women's World Cup: France vs Morocco (4–0)
+LOCATION:Hindmarsh Stadium\, Adelaide / Tarntanya\, Australia & New Zealand
+DESCRIPTION:Round of 16 · Match 55\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-57@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230811T010000Z
+DTEND:20230811T031500Z
+SUMMARY:Women's World Cup: Spain vs Netherlands (2–1)
+LOCATION:Wellington Regional Stadium\, Wellington / Te Whanganui-a-Tara\, Australia & New Zealand
+DESCRIPTION:Quarter-final · Match 57\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-58@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230811T073000Z
+DTEND:20230811T094500Z
+SUMMARY:Women's World Cup: Japan vs Sweden (1–2)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Quarter-final · Match 58\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-59@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230812T070000Z
+DTEND:20230812T091500Z
+SUMMARY:Women's World Cup: Australia vs France (0–0)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Quarter-final · Match 59\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-60@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230812T103000Z
+DTEND:20230812T124500Z
+SUMMARY:Women's World Cup: England vs Colombia (2–1)
+LOCATION:Stadium Australia\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Quarter-final · Match 60\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-61@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230815T080000Z
+DTEND:20230815T101500Z
+SUMMARY:Women's World Cup: Spain vs Sweden (2–1)
+LOCATION:Eden Park\, Auckland / Tāmaki Makaurau\, Australia & New Zealand
+DESCRIPTION:Semi-final · Match 61\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-62@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230816T100000Z
+DTEND:20230816T121500Z
+SUMMARY:Women's World Cup: Australia vs England (1–3)
+LOCATION:Stadium Australia\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Semi-final · Match 62\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-63@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230819T080000Z
+DTEND:20230819T101500Z
+SUMMARY:Women's World Cup: Sweden vs Australia (2–0)
+LOCATION:Brisbane Stadium\, Brisbane / Meaanjin\, Australia & New Zealand
+DESCRIPTION:Third-place play-off · Match 63\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+BEGIN:VEVENT
+UID:wwc2023-match-64@womensworldcupviewer
+DTSTAMP:20230821T000000Z
+DTSTART:20230820T100000Z
+DTEND:20230820T121500Z
+SUMMARY:Women's World Cup: Spain vs England (1–0)
+LOCATION:Stadium Australia\, Sydney / Gadigal\, Australia & New Zealand
+DESCRIPTION:Final · Match 64\nEnglish: FOX / FS1 · Spanish: Telemundo / Universo
+END:VEVENT
+END:VCALENDAR

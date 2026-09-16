@@ -235,13 +235,14 @@ must use **only Node built-ins and in-repo source** (no npm deps) — enforced b
 
 ## Outside `src`
 
-- `netlify/functions/calendar.js` — the auto-updating `webcal://` `.ics` feed
-  (fetches the live schedule per request; mirrors `utils/ics.js` formatting). It
-  is **ESM on purpose**: the package is `"type": "module"`, so a CommonJS function
-  502s on the Netlify Git-build path. It is ESPN-backed (`parseScoreboard`), and it
-  carries `VENUE_ALIASES` — ESPN files 9 of the 10 stadiums under sponsor names, so
-  without it the calendar feed would disagree with the app about where a match was
-  played.
+- `scripts/build-calendar.mjs` — builds the static `webcal://` `.ics` feed,
+  `public/calendar.ics`, from the committed schedule (a `prebuild` hook regenerates
+  it). It replaced an ESPN-backed Netlify function: ESPN dropped date-range
+  scoreboard queries, so the live feed 502'd. Reusing `utils/ics.js` keeps the
+  subscription and the in-app download identical, and it needs no venue aliasing
+  because the committed data already holds each stadium's name. The static file is
+  served by GitHub Pages and Netlify alike, and `test/calendar-feed.test.js` guards
+  it against drifting from the committed data.
 - `test/` — Vitest suite (units + jsdom component tests). Fixtures in
   `test/fixtures/` freeze real upstream data (`official-kickoffs.js`,
   `final-group-results.js`, `group-stage-md3.js`, `espn-scoreboard-snapshot.json`,

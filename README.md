@@ -101,8 +101,8 @@ best-third race; this one does not.
   excluded — Hinata Miyazawa took it with 5) plus tournament totals: matches,
   goals, goals per match, extra-time games and shootouts. Knockout match details
   add a **tale of the tape** — the two teams' tournament records side by side.
-- **Add to calendar** — per-match `.ics` download, plus a `webcal://` subscription
-  feed (all matches or just your teams).
+- **Add to calendar** — per-match `.ics` download, a filtered export, plus a
+  `webcal://` subscription feed of the whole tournament with every final score.
 - **Spoiler-free mode** — hide scores globally, per day, or per match.
 - **Light/dark theme** — follows your system preference, with no flash on load.
 - **Shareable URLs** — view, timezone, spoiler mode, and filters persist to the

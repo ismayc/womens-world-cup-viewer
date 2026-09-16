@@ -50,10 +50,13 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       all: true, // count untested files too, so the badge isn't flattered
-      // netlify/functions is inside the gate as well as src. The subscription
-      // endpoint is real shipped code that a subscriber's calendar hits directly,
-      // and it sat outside coverage.include while the badge read 100%.
-      include: ['src/**', 'netlify/functions/**'],
+      // Only src/** here. This finished edition's /calendar.ics is a STATIC file built
+      // by scripts/build-calendar.mjs (scripts/** sits outside the gate family-wide),
+      // not a Netlify function, so there is no runtime endpoint to cover. The live
+      // siblings keep 'netlify/functions/**' in this list because their feed IS a
+      // function that a subscriber's calendar hits directly. The static file's
+      // fidelity is guarded by test/calendar-feed.test.js instead.
+      include: ['src/**'],
       exclude: ['src/main.jsx', 'src/**/*.test.{js,jsx}'],
       reporter: ['text-summary', 'json-summary', 'json'],
       // Enforced gate: the suite (and CI's coverage:badge step) fails if any
