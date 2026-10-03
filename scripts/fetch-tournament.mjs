@@ -298,7 +298,11 @@ function normalizeEvent(event) {
     espnId: event.id,
     stage,
     group: groupOf(c),
-    ko: toVenueLocal(c.date, VENUE_META[venueId].tz),
+    // Null when ESPN has only set the DATE (`timeValid: false`, with midnight US
+    // Eastern standing in for the kickoff): a venue-local rendering of a placeholder
+    // is a time nobody announced, and on the wrong day for a venue west of Eastern.
+    // See sports-viewer-meta/docs/LINEAGES.md §6.
+    ko: c.timeValid === false ? null : toVenueLocal(c.date, VENUE_META[venueId].tz),
     key: matchKey(c.date, home.team.displayName, away.team.displayName),
     venue: VENUE_META[venueId].key,
     t1: home.team.displayName,
