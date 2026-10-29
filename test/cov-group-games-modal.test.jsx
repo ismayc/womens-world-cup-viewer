@@ -147,3 +147,14 @@ describe('GroupGamesModal (coverage)', () => {
     expect(screen.getAllByText('Upcoming').length).toBe(3)
   })
 })
+
+// Spoiler-free mode must not leak the result through the live badge.
+describe('GroupGamesModal live badge in spoiler-free mode', () => {
+  it('shows only LIVE while hidden', () => {
+    const matches = MATCHES.map((m) => (m.num === 1 ? { ...m, score: [1, 1], live: { clock: "ET 105'", detail: "Extra time 105'" } } : m))
+    renderModal({ matches, hideScores: true })
+    const badge = document.querySelector('.gg-status .badge-live')
+    expect(badge).toHaveTextContent(/^● LIVE$/)
+    expect(badge).toHaveAttribute('title', 'Live')
+  })
+})

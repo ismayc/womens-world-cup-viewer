@@ -4,6 +4,18 @@ A dated changelog for the Women's World Cup 2023 Schedule Viewer. Each heading i
 a calendar day; bullet points capture every change made that day (features, fixes,
 data/source updates, deployment). Newest day on top.
 
+## 2026-10-29
+
+- **Spoiler-free mode no longer gives away extra time or the champion.** With
+  scores hidden, a live match still showed ESPN's clock, such as "90+3'" or
+  "ET 105'", and its tooltip carried the same detail. A minute badge that later reads
+  "ET" says the match was level after 90 minutes. With scores hidden, a live match now
+  reads only "LIVE" on the match card, the Week view, the day and group pop-ups, the
+  bracket, and the Next match banner, and the badge tooltip drops the detail too. The
+  match popout does the same until you tap "reveal". The Next match banner also stopped
+  crowning the champion and naming the runners-up after the Final while scores are
+  hidden. Finals already hid "AET" and penalty scores with the score.
+
 ## 2026-09-17
 
 - **The knockout bracket now draws elbow connectors between rounds.** Each match

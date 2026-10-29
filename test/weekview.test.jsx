@@ -137,3 +137,20 @@ describe('WeekView', () => {
     expect(screen.getByText('Winner Match 28')).toBeInTheDocument()
   })
 })
+
+// Spoiler-free mode must not leak the result through the live badge.
+describe('WeekView live badge in spoiler-free mode', () => {
+  it('shows only LIVE while hidden and the clock when shown', () => {
+    const m = { ...MATCHES.find((x) => x.stage === 'Group'), score: [1, 1], live: { clock: "90+3'", detail: "90'+3'" } }
+    renderWeek({ allMatches: [m], shown: [m], dayHidden: () => true })
+    expect(screen.queryByText(/90\+3/)).not.toBeInTheDocument()
+    expect(screen.getByRole('status')).toHaveAttribute('title', 'Live')
+    expect(screen.getByRole('status')).toHaveTextContent(/^● LIVE$/)
+  })
+
+  it('still shows the clock when scores are shown', () => {
+    const m = { ...MATCHES.find((x) => x.stage === 'Group'), score: [1, 1], live: { clock: "90+3'", detail: "90'+3'" } }
+    renderWeek({ allMatches: [m], shown: [m], dayHidden: () => false })
+    expect(screen.getByRole('status')).toHaveTextContent("90+3'")
+  })
+})

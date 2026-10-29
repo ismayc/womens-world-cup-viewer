@@ -130,3 +130,14 @@ describe('DayMatchesModal (coverage)', () => {
   })
 
 })
+
+// Spoiler-free mode must not leak the result through the live badge.
+describe('DayMatchesModal live badge in spoiler-free mode', () => {
+  it('shows only LIVE while hidden', () => {
+    const m = { ...GROUP_MATCH, score: [1, 1], live: { clock: "90+3'", detail: "90'+3'" } }
+    renderModal({ matches: [m], hideScores: true })
+    const badge = document.querySelector('.dm-status .badge-live')
+    expect(badge).toHaveTextContent(/^● LIVE$/)
+    expect(badge).toHaveAttribute('title', 'Live')
+  })
+})

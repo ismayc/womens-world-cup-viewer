@@ -122,3 +122,18 @@ describe('NextMatch — stacked rows for knockout matches', () => {
     }
   })
 })
+
+// Spoiler-free mode must not leak the result through the stacked live badges.
+describe('NextMatch live badges in spoiler-free mode', () => {
+  it('shows only LIVE on each stacked row', () => {
+    const lv = (m) => ({ ...m, live: { clock: "ET 105'", detail: "Extra time 105'" }, score: [1, 1] })
+    render(
+      <FollowProvider>
+        <NextMatch matches={[lv(a), lv(b)]} tz="America/New_York" hideScores />
+      </FollowProvider>,
+    )
+    const badges = [...document.querySelectorAll('.nm-live-row .badge-live')]
+    expect(badges.map((x) => x.textContent)).toEqual(['● LIVE', '● LIVE'])
+    expect(badges.every((x) => x.getAttribute('title') === 'Live')).toBe(true)
+  })
+})

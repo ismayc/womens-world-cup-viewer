@@ -11,11 +11,11 @@ const MATCHES = unscored(PLAYED)
 
 const TZ = 'America/New_York'
 
-function renderNM(matches, followedTeams = []) {
+function renderNM(matches, followedTeams = [], hideScores = false) {
   localStorage.setItem('wwc:followed', JSON.stringify(followedTeams))
   return render(
     <FollowProvider>
-      <NextMatch matches={matches} tz={TZ} />
+      <NextMatch matches={matches} tz={TZ} hideScores={hideScores} />
     </FollowProvider>,
   )
 }
@@ -51,6 +51,23 @@ describe('NextMatch', () => {
     expect(screen.getByText('Spain')).toBeInTheDocument()
     expect(screen.getByText(/World Cup champions!/)).toBeInTheDocument()
     expect(screen.getByText(/Runners-up:.*England/)).toBeInTheDocument()
+  })
+
+  it('does not crown the champion in spoiler-free mode', () => {
+    vi.setSystemTime(new Date('2023-08-21T00:00:00Z'))
+    const final = {
+      num: 64,
+      stage: 'Final',
+      t1: 'Spain',
+      t2: 'England',
+      venue: 'stadiumaustralia',
+      ko: '2023-08-20T20:00:00+10:00',
+      score: [1, 0],
+    }
+    renderNM([final], [], true)
+    expect(screen.queryByText('Spain')).toBeNull()
+    expect(screen.queryByText(/Runners-up/)).toBeNull()
+    expect(screen.getByText(/tournament has concluded/)).toBeInTheDocument()
   })
 
   it('falls back to the generic message when the Final is not yet decided', () => {

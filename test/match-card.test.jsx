@@ -274,3 +274,18 @@ describe('MatchCard venue local time', () => {
     expect(screen.queryByText(/local$/)).not.toBeInTheDocument()
   })
 })
+
+// Spoiler-free mode must not leak the result through the live badge: a minute or
+// "ET" clock says the match went long.
+describe('MatchCard live badge in spoiler-free mode', () => {
+  const liveET = { ...groupMatch, score: [1, 1], live: { clock: "ET 105'", detail: "Extra time 105'" } }
+
+  it('shows only LIVE while hidden, and the clock again after reveal', () => {
+    const { container } = renderCard({ match: liveET, hidden: true })
+    const badge = container.querySelector('.badge-live')
+    expect(badge).toHaveTextContent(/^● LIVE$/)
+    expect(badge).toHaveAttribute('title', 'Live')
+    fireEvent.click(screen.getByTitle('Reveal score'))
+    expect(container.querySelector('.badge-live')).toHaveTextContent("ET 105'")
+  })
+})

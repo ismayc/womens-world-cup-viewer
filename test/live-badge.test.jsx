@@ -26,3 +26,16 @@ describe('LiveBadge', () => {
     expect(badge).toHaveClass('custom')
   })
 })
+
+// Spoiler-free mode: a minute badge that later reads "90+3'" or "ET 105'" says the
+// match went to stoppage time or extra time, so only LIVE may show.
+describe('LiveBadge in spoiler-free mode', () => {
+  it('shows only LIVE: no clock, no detail in the text, tooltip, or label', () => {
+    render(<LiveBadge match={{ live: { clock: "ET 105'", detail: "Extra time 105'" } }} hideScores />)
+    const badge = screen.getByRole('status')
+    expect(badge).toHaveTextContent(/^● LIVE$/)
+    expect(badge).toHaveAttribute('title', 'Live')
+    expect(badge).toHaveAttribute('aria-label', 'Live')
+    expect(badge).toHaveClass('badge-live')
+  })
+})

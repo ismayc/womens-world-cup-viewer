@@ -280,3 +280,15 @@ describe('MatchDetail close handlers', () => {
     expect(onClose).toHaveBeenCalled()
   })
 })
+
+// Spoiler-free mode must not leak the result through the live badge.
+describe('MatchDetail live badge in spoiler-free mode', () => {
+  const liveET = { ...groupMatch, score: [1, 1], live: { clock: "ET 105'", detail: "Extra time 105'" } }
+
+  it('shows only LIVE until the score is revealed', () => {
+    renderDetail({ match: liveET, hideScores: true })
+    expect(document.querySelector('.md-live')).toHaveTextContent(/^● LIVE$/)
+    fireEvent.click(screen.getByText('🙈 reveal'))
+    expect(document.querySelector('.md-live')).toHaveTextContent("ET 105'")
+  })
+})
