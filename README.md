@@ -102,8 +102,10 @@ best-third race; this one does not.
   goals, goals per match, extra-time games and shootouts. Knockout match details
   add a **tale of the tape** — the two teams' tournament records side by side.
 - **Add to calendar** — per-match `.ics` download, a filtered export, plus a
-  `webcal://` subscription feed of the whole tournament with every final score.
-- **Spoiler-free mode** — hide scores globally, per day, or per match.
+  `webcal://` subscription feed of the whole tournament with every final score. The
+  feed is a static `calendar.ics` regenerated on every build (`npm run build:calendar`).
+- **Spoiler-free mode** — hide scores globally, per day, or per match. It also
+  hides the live clock, goal alerts, and the champion.
 - **Light/dark theme** — follows your system preference, with no flash on load.
 - **Shareable URLs** — view, timezone, spoiler mode, and filters persist to the
   query string; links unfurl with a title/description preview in chat apps.
@@ -189,9 +191,8 @@ every test run rather than only when someone regenerates.
 FIFA bans sponsor names at its tournaments, so the matches were played and
 broadcast under official names while ESPN files them under commercial ones — 9 of
 the 10 venues differ (Stadium Australia is ESPN's "Accor Stadium"). The official
-names are what the app shows; the ESPN name is only a join key. The Netlify
-calendar function carries the same alias table so the `.ics` feed agrees with the
-app.
+names are what the app shows; the ESPN name is only a join key. The static
+calendar feed built by `scripts/build-calendar.mjs` uses the same venue names.
 
 ## Data sources
 
@@ -226,7 +227,7 @@ See [`NEWS.md`](./NEWS.md) for the changelog.
 
 ## Credits
 
-Created by [Chester Ismay](https://chester.rbind.io). Source on
+Created by [Chester Ismay](https://chesterismay.com). Source on
 [GitHub](https://github.com/ismayc/womens-world-cup-viewer).
 
 The app icon and share image use the Southern Cross (Crux) — the one device
